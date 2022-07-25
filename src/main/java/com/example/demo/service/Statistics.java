@@ -47,8 +47,8 @@ public class Statistics extends Thread {
         }
         StatsArray.add(new UserService.Pair(maxBalance.getBalance(),maxBalance.getId()));
         StatsArray.add(new UserService.Pair(minBalance.getBalance(),minBalance.getId()));
-        StatsArray.add(new UserService.Pair(mostActive.getBalance(),mostActive.getId()));
-        StatsArray.add(new UserService.Pair(leastActive.getBalance(),leastActive.getId()));
+        StatsArray.add(new UserService.Pair(mostActive.getTransactions().size(),mostActive.getId()));
+        StatsArray.add(new UserService.Pair(leastActive.getTransactions().size(),leastActive.getId()));
 
     }
 }
